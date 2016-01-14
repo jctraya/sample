@@ -3,8 +3,8 @@ from SimpleCV import Camera, Display
 def main():
 
     x = 0;
-    cam  = Camera()
-    disp = Display()
+    cam  = Camera (prop_set={'width':640, 'height':480})
+    disp = Display (resolution=(320,240))
     while disp.isNotDone():
         img = cam.getImage()
         img = img.scale(0.5)
@@ -23,7 +23,7 @@ def main():
                     print "HOY GISING"
 
                     return main()
-        img.show()
+        img.save(disp)
 
 
 
