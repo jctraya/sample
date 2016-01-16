@@ -3,7 +3,7 @@ from SimpleCV import Camera, Display
 def main():
 
     x = 0;
-    cam  = Camera (prop_set={'width':320, 'height':240})
+    cam  = Camera ()
     disp = Display (resolution=(320,240))
     while disp.isNotDone():
         img = cam.getImage()
