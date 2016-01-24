@@ -14,18 +14,20 @@ def main():
             for face in faces:
                 face.draw()
                 print "eyes Detected"
-                x = 0
+               # x = 0
         else:
             
-                  x += 1
-                  print (x)    
-                  if x > 15:
-                    print "HOY GISING"
+                 # x += 1
 
-                    return main()
+                 print "close eyes"
+                  #print (x)    
+                  #if x > 10:
+                  #  print "HOY GISING"
+
+                   # return main()
         img.save(disp)
 
-
+        
 
  #if x > 15:
  #print("Hoy gising")
